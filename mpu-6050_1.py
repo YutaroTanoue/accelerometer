@@ -48,28 +48,28 @@ def read_word_sensor(adr):
         return val
 
 #
-# 角速度
+# 隗帝溷ｺｦ
 #
 # get gyro data
 def get_gyro_data_lsb():
     x = read_word_sensor(GYRO_XOUT)
     y = read_word_sensor(GYRO_YOUT)
     z = read_word_sensor(GYRO_ZOUT)
-    # 角速度表示
+    # 隗帝溷ｺｦ陦ｨ遉ｺ
     print 'gyro_x(raw): %d' % x,
     print 'gyro_y(raw): %d' % y,
     print 'gyro_z(raw): %d' % z,
     return [x, y, z]
 
 #
-# 加速度
+# 蜉騾溷ｺｦ
 #
 # get accel data
 def get_accel_data_lsb():
     x = read_word_sensor(ACCEL_XOUT)
     y = read_word_sensor(ACCEL_YOUT)
     z = read_word_sensor(ACCEL_ZOUT)
-    # 加速度表示
+    # 蜉騾溷ｺｦ陦ｨ遉ｺ
     print 'accel_x(raw): %d' % x,
     print 'accel_y(raw): %d' % y,
     print 'accel_z(raw): %d' % z,
@@ -79,9 +79,9 @@ def get_accel_data_lsb():
 # Main function
 #
 while 1:
-    # 角速度
+    # 隗帝溷ｺｦ
     gyro_x,gyro_y,gyro_z = get_gyro_data_lsb()
-    # 加速度
+    # 蜉騾溷ｺｦ
     accel_x,accel_y,accel_z = get_accel_data_lsb()
 
     print
